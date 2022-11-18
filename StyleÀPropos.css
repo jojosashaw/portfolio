@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+}
+header{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ul {
+    background-color: rgb(230,230,230);
+    box-shadow: 0 15px 10px rgb(230,230,230);
+    height: 60px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-inline-start: 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    line-height: 60px;
+}
+li{
+    display: inline;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.li_accueil{
+    position: absolute;
+    left: 20px;
+    font-size: 150%;
+    text-decoration: underline;
+}
+.li_contact{
+    position: absolute;
+    right: 40px;
+    font-size: 140%;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+    transition: all 0.5s;
+    font-family: Copperplate Gothic;
+}
+a:hover{
+    color: rgb(45,100,200);
+    border-radius: 5px;
+    font-size: 125%;
+    transition: all 0.3s;
+}
+a:active {
+    background-color: rgb(150, 150, 150);
+    color: rgb(15, 70, 160);
+    font-size: 100%;
+    transition: 0.1s;
+}
+
+
+h1{
+    font-family: Franklin Gothic Medium;
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+}
+h2{
+    font-family: Franklin Gothic Medium;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contenu_ligne{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.vertical_line{
+    border-left: 7px solid rgb(119, 181, 254);
+    display: inline-block;
+    height: 500px;
+    margin: 0 20px;
+}
+.ligne_g, .ligne_d{
+    background-color: rgb(240,250,250);
+    padding: 10px;
+    border-radius: 50px;
+}
+.contenu_lg{
+    margin-top: 50px;
+}
+.date_g{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline;
+    text-decoration-color: rgb(45,100,200);
+    font-family: Copperplate Gothic;
+}
+.box_g, .box_d{
+    background-color: rgb(15, 70, 160);
+    color: rgb(230,230,230);
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Franklin Gothic;
+    font-weight: lighter;
+}
+.contenu_ld{
+    margin-top: 250px;
+}
+.date_d{
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: rgb(45,100,200);
+    font-family: Copperplate Gothic;
+}
+
+img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 20px 15px rgb(170, 170, 170);
+}
+.contenu_passions{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+p{
+    font-family: Franklin Gothic;
+    margin-top: 20px;
+}
+.passion_1, .passion_2, .passion_3{
+    width: 200px;
+}
+
+
+footer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(119, 181, 254);
+    margin-top: 100px;
+    border-top: 5px solid rgb(15, 70, 160);
+    font-size: 150%;
+    font-family: Copperplate Gothic;
+}
+.contenu_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mail:hover, .Ml:hover, .tel:hover{
+    color: white;
+    text-decoration: underline white;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 950px) {
+    footer{
+        font-size: 100%;
+    }
+    li{
+        font-size: 100%;
+    }
+    .li_accueil{
+        font-size: 100%;
+    }
+    .li_contact{
+        font-size: 100%;
+    }
+}
+@media all and (max-width: 750px) {
+    li{
+        font-size: 70%;
+        margin-left: 0;
+        display: contents;
+    }
+    .li_accueil{
+        font-size: 60%;
+    }
+    .li_contact{
+        font-size: 60%;
+    }
+    a:hover{
+        font-size: 100%;
+    }
+    h1{
+        font-size: 200%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    .vertical_line{
+        display: none;
+    }
+    .contenu_ligne{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .ligne_g{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-right: 20%;
+    }
+    .ligne_d{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 20%;
+    }
+    .contenu_ld, .contenu_lg{
+        margin-top: 0;
+    }
+    .contenu_passions{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media all and (max-width: 500px) {
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        font-size: 70%;
+    }
+    li{
+        font-size: 50%;
+    }
+    .li_accueil{
+        font-size: 50%;
+    }
+    .li_contact{
+        font-size: 50%;
+    }
+    .ligne_g, .ligne_d{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .box_g, .box_d{
+        width: 200px;
+        font-size: 75%;
+    }
+}

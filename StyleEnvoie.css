@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+}
+header{
+    text-align: center;
+}
+ul{
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 15px 10px rgb(230, 230, 230);
+    height: 60px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-inline-start: 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    line-height: 60px;
+}
+li{
+    display: inline;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.li_accueil{
+    position: absolute;
+    left: 20px;
+    font-size: 150%;
+    text-decoration: underline;
+}
+.li_contact{
+    position: absolute;
+    right: 40px;
+    font-size: 140%;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+    transition: all 0.5s;
+    font-family: Copperplate Gothic;
+}
+a:hover{
+    color: rgb(45,100,200);
+    border-radius: 5px;
+    font-size: 125%;
+    transition: all 0.3s;
+}
+a:active {
+    background-color: rgb(150, 150, 150);
+    color: rgb(15, 70, 160);
+    font-size: 100%;
+    transition: 0.1s;
+}
+
+h1{
+    font-family: Franklin Gothic Medium;
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;
+}
+.img_envoie{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 300px;
+    height: auto;
+}
+form{
+     display: flex;
+     justify-content: center;
+ }
+button{
+    width: 400px;
+    height: 50px;
+    background-color: rgb(230,230,230);
+    border: 1px solid rgb(119, 181, 254);
+    border-radius: 20px;
+    font-size: 140%;
+    font-family: futara;
+}
+button:hover{
+    background-color: rgb(119, 181, 254);
+    transition: 0.5s;
+}
+button:active{
+    width: 320px;
+    height: 40px;
+    font-size: 104%;
+    transition: 0.3s;
+}
+
+
+footer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(119, 181, 254);
+    margin-top: 100px;
+    border-top: 5px solid rgb(15, 70, 160);
+    font-size: 150%;
+    font-family: Copperplate Gothic;
+    text-decoration: underline;
+}
+.contenu_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mail:hover, .Ml:hover, .tel:hover{
+    color: white;
+    text-decoration: underline white;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 950px) {
+    footer{
+        font-size: 100%;
+    }
+    li{
+        font-size: 100%;
+    }
+    .li_accueil{
+        font-size: 100%;
+    }
+    .li_contact{
+        font-size: 100%;
+    }
+}
+@media all and (max-width: 750px) {
+    li{
+        font-size: 70%;
+        margin-left: 0;
+        display: contents;
+    }
+    .li_accueil{
+        font-size: 60%;
+    }
+    .li_contact{
+        font-size: 60%;
+    }
+    a:hover{
+        font-size: 100%;
+    }
+    h1{
+        font-size: 200%;
+    }
+}
+@media all and (max-width: 500px) {
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        font-size: 70%;
+    }
+    li{
+        font-size: 50%;
+    }
+    .li_accueil{
+        font-size: 50%;
+    }
+    .li_contact{
+        font-size: 50%;
+    }
+    h1{
+        font-size: 100%;
+    }
+    img{
+        width: 200px;
+    }
+    button {
+        width: 240px;
+        height: 30px;
+        font-size: 100%;
+    }
+    footer{
+        margin-top: 70px;
+    }
+}

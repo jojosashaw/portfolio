@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+}
+header{
+    text-align: center;
+}
+ul {
+    background-color: rgb(230,230,230);
+    box-shadow: 0 15px 10px rgb(230,230,230);
+    height: 60px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-inline-start: 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    line-height: 60px;
+}
+li{
+    display: inline;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.li_accueil{
+    position: absolute;
+    left: 20px;
+    font-size: 150%;
+    text-decoration: underline;
+}
+.li_contact{
+    position: absolute;
+    right: 40px;
+    font-size: 140%;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+    transition: all 0.5s;
+    font-family: Copperplate Gothic;
+}
+a:hover{
+    color: rgb(45,100,200);
+    border-radius: 5px;
+    font-size: 125%;
+    transition: all 0.3s;
+}
+a:active {
+    background-color: rgb(150, 150, 150);
+    color: rgb(15, 70, 160);
+    font-size: 100%;
+    transition: 0.1s;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: Franklin Gothic Medium;
+    margin-top: 60px;
+    font-size: 300%;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+form{
+    box-shadow: 0 5px 10px 10px rgb(119, 181, 254);
+    display: flex;
+    justify-content: flex-start;
+    height: 400px;
+    width: 650px;
+}
+.contenu_formulaire {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 130%;
+    font-family: Franklin Gothic;
+    margin-left: 10%;
+}
+.message{
+    font-family: futara;
+    font-size: small;
+    color: rgb(200,0,0);
+    margin-top: 5px;
+}
+input {
+    width: 170px;
+    height: 20px;
+    margin-top: 20px;
+    border: 1px solid rgb(119, 181, 254);
+    border-radius: 5px;
+}
+textarea{
+    margin-top: 20px;
+    resize: none;
+    height: 70px;
+    width: 400px;
+    border: 1px solid rgb(119, 181, 254);
+    border-radius: 5px;
+}
+
+.button{
+    margin-top: 40px;
+
+}
+button{
+    width: 300px;
+    height: 37px;
+    background-color: rgb(230,230,230);
+    border: 1px solid rgb(119, 181, 254);
+    border-radius: 20px;
+    font-size: 105%;
+    font-family: futara;
+}
+button:hover{
+    background-color: rgb(119, 181, 254);
+    border-color: rgb(15, 70, 160);
+    transition: 0.3s;
+}
+button:active{
+    background-color: rgb(15, 70, 160);
+    color: rgb(230,230,230);
+    transition: 0.1s;
+}
+
+.text_formulaire{
+    display: flex;
+    align-items: baseline;
+}
+
+footer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(119, 181, 254);
+    margin-top: 100px;
+    border-top: 5px solid rgb(15, 70, 160);
+    font-size: 150%;
+    font-family: Copperplate Gothic;
+    text-decoration: underline;
+}
+.contenu_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mail:hover, .Ml:hover, .tel:hover{
+    color: white;
+    text-decoration: underline white;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 950px) {
+    footer{
+        font-size: 100%;
+    }
+    li{
+        font-size: 100%;
+    }
+    .li_accueil{
+        font-size: 100%;
+    }
+    .li_contact{
+        font-size: 100%;
+    }
+}
+@media all and (max-width: 750px) {
+    li{
+        font-size: 70%;
+        margin-left: 0;
+        display: contents;
+    }
+    .li_accueil{
+        font-size: 60%;
+    }
+    .li_contact{
+        font-size: 60%;
+    }
+    a:hover{
+        font-size: 100%;
+    }
+    h1{
+        font-size: 200%;
+    }
+    form{
+        height: 280px;
+        width: 460px;
+    }
+    .contenu_formulaire{
+        font-size: 100%;
+    }
+    input{
+        height: initial;
+        width: initial;
+        margin-top: 14px;
+    }
+    textarea{
+        height: initial;
+        width: initial;
+    }
+    .button{
+        margin-top: 20px;
+    }
+}
+@media all and (max-width: 500px) {
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer{
+        font-size: 70%;
+    }
+    li{
+        font-size: 50%;
+    }
+    .li_accueil{
+        font-size: 50%;
+    }
+    .li_contact{
+        font-size: 50%;
+    }
+    h1{
+        font-size: 160%;
+    }
+    form{
+        height: 250px;
+        width: 250px;
+    }
+    .contenu_formulaire{
+        font-size: 75%;
+        margin-left: 5%;
+    }
+    .message{
+        font-size: 70%;
+    }
+    input{
+        width: 50%;
+        margin-top: 8px;
+    }
+    textarea{
+        width: 60%;
+        margin-top: 12px;
+    }
+    .button{
+        margin-top: 15px;
+    }
+    button{
+        width: 180px;
+    }
+}
